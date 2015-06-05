@@ -1,1 +1,126 @@
 /* All style should go in this document. */
+body{
+    font: 1em;
+    background-color:   #4b3832;
+}
+
+h1{
+    color:#fff4e6;
+    padding-top: 2%;
+}
+
+h2{
+    padding-top: 2%;
+}
+//Reset HTML 5 elements to block
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+#container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    position: relative;
+    height:0.16%;
+}   
+
+#siteLogo{
+    position: absolute;
+    margin-top: 2%;
+}
+
+#siteDescription{
+    font: italic 100% "Times New Roman", Times, serif;
+    color: #be9b7b;
+    position: absolute;
+    margin-top: 7%;
+}
+
+
+article{
+    background: #be9b7b;
+    margin-top: 15%;
+    padding: 0% 3%;
+    width: 65%;
+    float: left;
+    border-radius: 1%;
+    color: #3c2f2f;
+}
+
+aside{
+    width: 25%;
+    float: right;
+    margin: 15% 0 10%;
+}
+
+.widget{
+    background-color:   #3c2f2f;
+    margin: 0 0 10%;
+    padding: 5% 5%;
+    border-radius: 1%;
+    color: #fff4e6;
+}
+
+img{
+    height: 25%;
+    width: 100%;
+}
+
+
+.widget li{
+    margin-left: -20%;
+    padding-bottom: 5%;
+    color: #fff4e6;
+    list-style-type: none;
+
+}
+
+
+
+.widget ul li a{
+
+    color:  #be9b7b;
+}    
+
+.widget ul li a:hover {
+    
+    color: #FFCCCC;
+
+}
+
+.title{
+    font-size: 2em;
+    color:#854442;
+    font-weight: bold;
+}
+
+.title2{
+    margin-left: 2%;
+    font-size: 1.3em;
+    color:#fff4e6;
+}
+
+.classSy{
+    font-size: 0.90em;
+    color:  #4b3832;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+.content{
+   margin-left: 3%;
+}
+
+a{
+    color:#3c2f2f;
+}
+
+a:hover{
+    color:  #854442;}
+
+.thesis{
+    margin-left: 3%;
+}
