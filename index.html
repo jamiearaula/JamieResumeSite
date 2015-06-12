@@ -1,85 +1,127 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
         <title>Jamie Dell D. Araula Portfolio</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" href="css/style.css" rel="stylesheet" />
+         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/fun.js"></script>
+        <link type="text/css" href="css/style.css" rel="stylesheet" /> 
         <link type="text/css" href="css/mquery.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="container">
-            <header>
-                <hgroup>
-                    <h1 id="siteLogo">Jamie Dell D. Araula</h1>
-                    <h2 id="siteDescription">"We can only see a short distance ahead, but we can see plenty there that needs to be done." - Allan Turing</h2>
-                </hgroup>
-            </header>
-            <aside>
-                 <section id="widget1" class="widget">
-                    <img src="img/photo.jpg" alt="Jamie Dell Araula"> 
-                </section>
-                <section id="widget2" class="widget">
-                   <nav>
-                        <ul>
-                            <li>Mobile No. <a href="#">(203) 817-2273</a></li>  
-                            <li>Email: <a href="mailto:araulajamie@gmail.com">araulajamie@gmail.com</a> </li>
-                            <li>LinkedIn Profile: <a href="https://www.linkedin.com/pub/jamie-dell-araula/77/604/54">Go to LinkedIn Profile</a> </li>
-                            <li>R&eacute;sum&eacute; to download: <a href="resumeUpdate.pdf" download>Click to download PDF</a></li>
-                        </ul>
-                    </nav>  
-                </section> 
-            </aside>
+        <div class="container">
+            <div id="top" class="jumbotron">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h1>Jamie Dell D. Araula</h1>
+                        <blockquote>
+                            We can only see a short distance ahead, but we can see plenty there that needs to be done.
+                        <footer>Allan Turing</footer>
+                        </blockquote>
+                    </div>
+                    <div id="photo" class="col-sm-3">
+                        <center>
+                            <img src="img/photo.jpg" class="img-circle" alt="Jamie Dell Araula">
+                           
+                        </center>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="button" class="btn btn-info btn-lg" id="contactMe">Contact Me</button>
+                    </div>
 
-            <article>
-                <p class="title">About Me</p>
-                <p>
+                </div>
+            </div>    
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div id="contactInfo" class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Contact Info</h4>
+                        </div>
+                        <div  class="modal-body">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><span class="glyphicon glyphicon-phone"></span><a href="#">(203) 817-2273</a></li>  
+                                    <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:araulajamie@gmail.com"> araulajamie@gmail.com</a></li>
+                                    <li><span class="glyphicon glyphicon-globe"></span><a href="https://www.linkedin.com/pub/jamie-dell-araula/77/604/54"> Go to LinkedIn Profile</a></li>
+                                    <li><span class="glyphicon glyphicon-download"></span><a href="resumeUpdate.pdf" download> Click to download PDF</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div  class="modal-footer">
+                            <button id="ex" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div id="aboutMe">
+                <p >
                      I am an aspiring software/web developer. In everyday life, I challenged myself to handle and solve problems efficiently and effectively. I strive to improve myself as a programmer and as a human being.
-                </p>
+                <p>
+            </div>    
+            <div class="row">
+                <div id="secTitle" class="col-sm-2">
+                    <h3>Education</h3>
+                </div>    
+                <div id="bcg" class="col-sm-3">  
+                    <p class="title">Norwalk Community College</p>
+                    <p class="date">September2014-May2015</p> 
+                    <p><b>Certificate:</b> Web Development</p>
+                </div>
+                <div id="bcg" class="col-sm-7"> 
+                    <p  class="title">Silliman University</p>
+                    <p  class="date">June2008-March2013</p>  
+                    <p><b>Degree:</b> Computer Science</p>
+                    <p><b>Certificate:</b> Phil-IT General Certification Examination Passer (March 2012)</p>
+                    <p><a href="#"> Thesis: Deep Learning Gaussian Radial Basis Function Networks with an Application to Phone Recognition</a></p> 
+                </div>  
+            </div> 
 
-                <p class="title">Education</p>
-                <p class="title2">Norwalk Community College</p>
-                <p class="classSy"><i>September2014-May2015</i><p> 
-                <p class="content"><b>Certificate:</b> Web Development</p>
-                
-                <p class="title2">Silliman University</p>
-                <p class="classSy">June2008-March2013</p>  
-                <p class="content"><b>Degree:</b> Computer Science</p>
-                <p class="content"><b>Certificate:</b> Phil-IT General Certification Examination Passer (March 2012)</p>
-                <p class="thesis"><a href="#"> Thesis: Deep Learning Gaussian Radial Basis Function Networks with an Application to Phone Recognition</a></p> 
-
-                <p class="title">Skill Set</p>
-                <p class="title2">Technical Tools</p>
-                <nav>
-                    <ul> 
-                        <li>Languages: Java, PHP, JavaScript</li>
-                        <li>Databases: MySQL, phpMyAdmin </li>
-                        <li>Development Tools: Netbeans SDK</li>
-                    </ul>   
-                </nav>  
-
-                <p class="title2">Technical Tools</p>
-                <nav>
-                    <ul> 
-                        <li>Languages: C, C++, Java, Visual Basic, PHP</li>
-                        <li>Databases: MySQL, phpMyAdmin</li>
-                        <li>Development tools:  Eclipse SDK, VB Studio, IBM DB2, Oracle</li>
-                    </ul>   
-                </nav>
-    
-                <p class="title">Project Work </p>
-                <p class="title2">Database Driven Website</p>
-                <p class="content">Created a functioning website using MySQL paired with PHP.</p>
-                <p class="title2">Front End Web Development </p> 
-                <p class="content">Adding E-commerce functionality to a website created by a team for a client.</p>
-                <p class="title2">Mobile Game App</p>
-                <p class="content">Created a game application for an android phone using JavaME environment.</p>
-            </article>        
+            <div class="row">
+                <div  id="secTitle" class="col-sm-2"> 
+                    <h3>Skill Set</h3>
+                </div>
+                <div id="bcg" class="col-sm-3">
+                    <p class="title">Languages</p>
+                    <nav>
+                        <ul>   
+                            <li>English - Native/Bilingual Proficiency</li>
+                            <li>Filipino - Native/Bilingual Proficiency</li> 
+                        </ul> 
+                    </nav>       
+                </div>   
+                <div id="bcg" class="col-sm-7">
+                    <p  class="title">Technical Tools</p>
+                    <nav>
+                        <ul> 
+                            <li>Languages: Java, PHP, JavaScript, C, C++, Visual Basic, Linux-scripting</li>
+                            <li>Databases: MySQL, phpMyAdmin </li>
+                            <li>Development Tools: Netbeans SDK, Eclipse SDK, IBM DB2, Oracle, VB Studio</li>
+                        </ul>   
+                    </nav>  
+                </div>
+            </div>
+            <div  class="row">
+                <div  id="secTitle" class="col-sm-2">
+                    <h3>Project Work </h3>
+                </div>  
+                <div id="bcg" class="col-sm-10">
+                    <dl>
+                        <dt>Database Driven Website</dt>
+                        <dd> - Created a functioning website using MySQL paired with PHP.</dd>
+                        <dt>Front End Web Development</dt>
+                        <dd> - Added E-commerce functionality to a website created by a team for a client. </dd>
+                        <dt>Mobile Game</dt>
+                        <dd> - Created a game application for an android phone using JavaME environment.</dd>
+                    </dl>    
+                </div>
+            </div>              
         </div>
     </body>
 </html>

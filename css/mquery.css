@@ -1,104 +1,47 @@
 @media screen and (max-width: 980px) {
-    #container {
-        width: 95%;
-    }
-   
-    aside {
-        width: 30%;
-    }
-    .widget {
-        padding: 8% 7%;
-        margin-bottom: 10px;
-    }
+    img{
+        width: 85%;
+        height:25%;
 
-    article{
-        width:55%;
-    }
+   }
 }
 @media screen and (max-width: 768px) {
-    #container{
-        width: 95%;
-    }
+ img{
+        width: 60%;
+        height:25%;
 
-  #siteDescription{
-    margin-top: 15%;
-  }  
-  article{
-    width:55%;
-    margin-top: 30%;
-     
-  }
-  
-  aside{
-    width: 35%;
-    margin-top: 30%;
+   } 
 
-  }
+   #bcg{
+        margin-left: 5%;
+    
+   }
 
-     .widget {
-        padding: 1% 1%;
-        
-        
-    }
 
-    .widget ul{
-        margin-left: 0.50%;
-        
-        font-size: 0.85em;
-    }
 
 }
 @media screen and (max-width: 480px) {
-    /* disable webkit text size adjust (for iPhone) */
-    html {
-        -webkit-text-size-adjust: none;
-    }
+    img{
+        width: 45%;
+        height:25%;
+   }
 
-    #container{
-        width:95%;    }
-  header {
-        height: auto;
-    }
-    #siteLogo, #siteDescription{
-        font-size: medium;
-    }
+   blockquote{
+        font-size: 0.85em;
+   }
 
-    #siteLogo {
-        font-size: 1.5em;
-       
-        position: static;
-    }
+   li a{
+        font-size: 0.70em;
+   }
 
-    #siteDescription {
-        margin: 5% 0 20%;
-        position: static;
-    }
-
-    article {
-        width: auto;
-        float: none;
-        margin: 0 0 5%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-       
-    }
-
-    aside {
-        width: 100%;
-        margin-top: -10%;
-        float: none;
-    }
-    
-    .widget {
-        padding: 10% 10%;
-        
-        
-    }
-
-    .widget ul{
+   #bcg{
         margin-left: 5%;
+        font-size: 0.95em;
+   }
 
-    }
+   #aboutMe{
+        font-size: 1.1em;
+   }
 
 
 }
