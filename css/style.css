@@ -67,3 +67,8 @@ li a,a{
     font-size: 1.4em;
     padding-bottom: 2%;
 }
+
+.header{
+    position: fixed;
+}
+
