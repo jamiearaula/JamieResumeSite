@@ -67,3 +67,24 @@ li a,a{
     font-size: 1.4em;
     padding-bottom: 2%;
 }
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+   
+}
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+ 
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+
+}
+
