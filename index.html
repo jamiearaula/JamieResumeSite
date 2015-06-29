@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="header">
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar navbar-inverse">
                      <div class="navbar-header">
                         <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="container">
-            <div id="top" class="jumbotron">
+        <div id="top" class="jumbotron">
                 <div class="row">
                     <div class="col-sm-9">
                         <h1>Jamie Dell D. Araula</h1>
@@ -54,8 +54,8 @@
                     </div> 
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
-                        <button type="button" class="btn btn-info btn-lg" id="contactMe">Contact Me</button>
+                    <div id="contact">
+                        <button type="button" class="btn btn-info btn-lg center-block" id="contactMe">Contact Me</button>
                     </div>
 
                 </div>
@@ -71,7 +71,7 @@
                         <div  class="modal-body">
                             <nav>
                                 <ul class="list-unstyled">
-                                    <li><span class="glyphicon glyphicon-phone"></span><a href="tel:203-817-2273">(203) 817-2273</a></li>  
+                                    <li><span class="glyphicon glyphicon-phone"></span><a href="#">(203) 817-2273</a></li>  
                                     <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:araulajamie@gmail.com"> araulajamie@gmail.com</a></li>
                                     <li><span class="glyphicon glyphicon-globe"></span><a href="https://www.linkedin.com/pub/jamie-dell-araula/77/604/54"> Go to LinkedIn Profile</a></li>
                                     <li><span class="glyphicon glyphicon-download"></span><a href="resumeUpdate.pdf" download> Click to download PDF</a></li>
@@ -84,22 +84,23 @@
                      </div>
                 </div>
             </div>
-            <div id="aboutMe">
+            <div id="content">
+            <div id="aboutMe"  class="row page-section">
                 <p >
-                     I am an aspiring software/web developer. In everyday life, I challenged myself to handle and solve problems efficiently and effectively. I strive to improve myself as a programmer and as a human being.
+                     I am an aspiring software/web developer. In everyday life, I challenge myself to handle and solve problems efficiently and effectively. I strive to improve myself as a programmer and as a human being.
                 <p>
             </div>    
-            <div class="row">
+            <div id="education" class="row">
                 <div id="secTitle" class="col-sm-2">
                     <h3>Education</h3>
                 </div>    
                 <div id="bcg" class="col-sm-3">  
-                    <p class="title">Norwalk Community College</p>
+                    <a href="http://norwalk.edu/default.asp"><p class="title">Norwalk Community College</p></a>
                     <p class="date">September2014-May2015</p> 
                     <p><b>Certificate:</b> Web Development</p>
                 </div>
                 <div id="bcg" class="col-sm-7"> 
-                    <p  class="title">Silliman University</p>
+                    <a href="http://su.edu.ph/#"><p  class="title">Silliman University</p></a>
                     <p  class="date">June2008-March2013</p>  
                     <p><b>Degree:</b> Computer Science</p>
                     <p><b>Certificate:</b> Phil-IT General Certification Examination Passer (March 2012)</p>
@@ -107,7 +108,7 @@
                 </div>  
             </div> 
 
-            <div class="row">
+            <div id="skillset" class="row ">
                 <div  id="secTitle" class="col-sm-2"> 
                     <h3>Skill Set</h3>
                 </div>
@@ -121,7 +122,7 @@
                     </nav>       
                 </div>   
                 <div id="bcg" class="col-sm-7">
-                    <p  class="title">Technical Tools</p>
+                    <p class="title">Technical Tools</p>
                     <nav>
                         <ul> 
                             <li>Languages: Java, PHP, JavaScript, C, C++, Visual Basic, Linux-scripting</li>
@@ -131,7 +132,7 @@
                     </nav>  
                 </div>
             </div>
-            <div  class="row">
+            <div id="projectwork" class="row page-section">
                 <div  id="secTitle" class="col-sm-2">
                     <h3>Project Work </h3>
                 </div>  
@@ -145,7 +146,9 @@
                         <dd> - Created a game application for an android phone using JavaME environment.</dd>
                     </dl>    
                 </div>
-            </div>              
+            </div>  
+          
+        </div>
         </div>
     </body>
 </html>

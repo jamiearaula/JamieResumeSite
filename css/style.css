@@ -1,11 +1,27 @@
 /* All style should go in this document. */
-body,#contactMe,#contactInfo{
+
+body { 
+  background: url("../img/bcg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contactMe,#contactInfo,#content, .navbar{
     background-color:   #333333;
 
-}    
+
+}   
+
+
+#content{
+    opacity:0.8;
+}
 
 #top,#ex{
-    background-color:  #FFCCCC;
+    background-color:   #ffbbee;
+    margin-top: 8%;
 }
 
 img{
@@ -15,7 +31,7 @@ img{
 }
 
 li,p,dl{
-    color: #f7f7f7;
+    color:  #fdf5e6;
     
 }
 
@@ -24,28 +40,36 @@ li,dd{
 }
 
 li a,a{
-    color: #b3cde0;
+    color:#d6ffff;
 }
 
 #myModal,li a:hover,a:hover {
-     color: #FFCCCC;
+     color:   #ffbbee;
 
 }
 
-.title,dt{
-    color: #b3cde0;
+dt, .title {
+    color: #d6ffff;
     font-size: 1.2em;
 }
 
-.date{
-    color:#999;
-    font-size: 1em;
-    font-style: italic;
-    margin-left: 5%;
+.row{
+  padding-right: 3%;
+  margin-top: 5%;
 }
 
-#secTitle{
-    color:#FFCCCC;
+.date{
+    color: #ffbbee;
+    font-size: 1em;
+    font-style: italic;
+   
+}
+
+#secTitle h3{
+    color:  #ffbbee;
+    font-size: 1.8em;
+    margin-left: 4%;
+    font-weight: bold;
 }
 
 #contactInfo{
@@ -56,35 +80,47 @@ li a,a{
 }
 
 #bcg{
-    padding-top: 4%;
-    font-size: 1.3em;
+    padding-top: 1.5%;
+    font-size: 1.5em;
 }
 
 #aboutMe {
-    padding-top: 3%;
+   padding-top: 3%;
     margin-left: 10%;
     margin-right: 8%;
     font-size: 1.4em;
-    padding-bottom: 2%;
+   
 }
+
 
 .header{
     position: fixed;
     width: 100%;
     z-index: 10;
-   
+     color:#FFCCCC;
 }
+
 
 
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
- 
+  font-size: 1.5em;
+
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+  
+}
+
+.navbar .navbar-collapse> li > a{
+  color: #ffbbee;
+}
+.navbar .navbar-collapse> li > a:hover{
 
 }
+
+
 
