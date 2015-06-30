@@ -17,11 +17,25 @@ body {
 
 #content{
     opacity:0.8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content h2{
+  color:  #ffbbee;
 }
 
 #top,#ex{
     background-color:   #ffbbee;
     margin-top: 8%;
+    
+}
+
+#top h1{
+  font-family: 'Lobster', cursive;
+}
+
+#top blockquote{
+  font-family: 'Dancing Script', cursive;
 }
 
 img{
@@ -112,7 +126,7 @@ dt, .title {
 
 .navbar .navbar-collapse {
   text-align: center;
-  
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar .navbar-collapse> li > a{
