@@ -1,7 +1,7 @@
 /* All style should go in this document. */
 
 body { 
-  background: url("../img/bcg.jpg") no-repeat center center fixed; 
+  background: url("../img/bcg_mini.jpg") no-repeat center center fixed; 
   -webkit-background-size: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
