@@ -14,6 +14,15 @@ body {
 
 }   
 
+.images{
+  list-style-type: none;
+
+}
+
+.images > li {
+  display : inline-block;
+  padding-right: 10px;
+}
 
 #content{
     opacity:0.8;
@@ -44,6 +53,10 @@ img{
     padding-bottom: 5%;
 }
 
+.tools{
+  width: 150px;
+  height:200px;
+}
 li,p,dl{
     color:  #fdf5e6;
     
@@ -64,7 +77,7 @@ li a,a{
 
 dt, .title {
     color: #d6ffff;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .row{
