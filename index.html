@@ -5,6 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+         <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="js/fun.js"></script>
@@ -12,9 +15,34 @@
         <link type="text/css" href="css/mquery.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-inverse">
+                     <div class="navbar-header">
+                        <button id="nav-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                        <span class="sr-only">Toggle navigation</span>    
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                        </button>
+                      
+                    </div>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-link" data-id="aboutMe">About Me</a></li>
+                        <li><a href="#" class="scroll-link" data-id="education">Education</a></li>
+                        <li><a href="#" class="scroll-link" data-id="experience">Work Experience</a></li>
+                        <li><a href="#" class="scroll-link" data-id="skillset">Skill Set</a></li>
+                        <li><a href="#" class="scroll-link" data-id="projectwork">Project Work</a></li>
+                        <li><a href="#" class="scroll-link" data-id="top">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <div id="top" class="jumbotron">
-                <div class="row">
+                <div>
                     <div class="col-sm-9">
                         <h1>Jamie Dell D. Araula</h1>
                         <blockquote>
@@ -29,9 +57,9 @@
                         </center>
                     </div> 
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button type="button" class="btn btn-info btn-lg" id="contactMe">Contact Me</button>
+                <div >
+                    <div id="contact">
+                        <button type="button" class="btn btn-info btn-lg center-block" id="contactMe">Contact Me</button>
                     </div>
 
                 </div>
@@ -60,30 +88,64 @@
                      </div>
                 </div>
             </div>
-            <div id="aboutMe">
-                <p >
-                     I am an aspiring software/web developer. In everyday life, I challenged myself to handle and solve problems efficiently and effectively. I strive to improve myself as a programmer and as a human being.
+            <div id="content">
+            <div id="aboutMe"  class="row page-section">
+                <h2>Profile</h2>
+                <p>
+                    Efficient, detail-oriented, team player, results-oriented, aspiring software developer who is able to build a web presence from the ground up: from concept, navigation, layout and programming
                 <p>
             </div>    
-            <div class="row">
+            <div id="education" class="row">
                 <div id="secTitle" class="col-sm-2">
                     <h3>Education</h3>
                 </div>    
                 <div id="bcg" class="col-sm-3">  
-                    <p class="title">Norwalk Community College</p>
-                    <p class="date">September2014-May2015</p> 
+                    <a href="http://norwalk.edu/default.asp"><p class="title">Norwalk Community College</p></a>
+                    <p class="date">September,2014-May,2015</p> 
                     <p><b>Certificate:</b> Web Development</p>
                 </div>
                 <div id="bcg" class="col-sm-7"> 
-                    <p  class="title">Silliman University</p>
-                    <p  class="date">June2008-March2013</p>  
+                    <a href="http://su.edu.ph/#"><p  class="title">Silliman University</p></a>
+                    <p  class="date">June,2008-March,2013</p>  
                     <p><b>Degree:</b> Computer Science</p>
-                    <p><b>Certificate:</b> Phil-IT General Certification Examination Passer (March 2012)</p>
-                    <p><a href="#"> Thesis: Deep Learning Gaussian Radial Basis Function Networks with an Application to Phone Recognition</a></p> 
+                    <p><b>Certificate:</b> Phil-IT General Certification Examination Passer (March 2012)</p>       
                 </div>  
             </div> 
 
-            <div class="row">
+            <div id="experience" class="row">
+                <div id="secTitle" class="col-sm-2">
+                    <h3>Work Experience</h3>
+                </div> 
+                <div id="bcg" class="col-sm-3">
+                    <center>
+                            <img src="img/a100certified.png" class="img-circle" alt="A100 Certified Developer">      
+                    </center>   
+                </div>
+                <div id="bcg" class="col-sm-7">
+                    <p class="title">Apprentice of Independent Software</p>  
+                    <p class="date">June-September,2015</p>
+                    <dl>
+                        <dt>Trained and evaluated in...</dt>
+                        <dd>
+                            <nav>
+                                <ul>
+                                    <li>Full stack web development</li>  
+                                    <li>Software development tools</li> 
+                                    <li>Agile process</li> 
+                                    <li>Design/UI</li> 
+                                    <li>Technical Communication</li>       
+                                </ul>    
+                            </nav>  
+                        </dd>
+                        <dt>Worked with a team..</dt>
+                        <dd> - over multiple Sprints to produce
+                            working product for a partner company.
+                        </dd>
+                    </dl>     
+                </div>  
+            </div>    
+
+            <div id="skillset" class="row ">
                 <div  id="secTitle" class="col-sm-2"> 
                     <h3>Skill Set</h3>
                 </div>
@@ -96,32 +158,47 @@
                         </ul> 
                     </nav>       
                 </div>   
+                
                 <div id="bcg" class="col-sm-7">
-                    <p  class="title">Technical Tools</p>
+                    <p class="title">Technical Tools</p>
                     <nav>
-                        <ul> 
-                            <li>Languages: Java, PHP, JavaScript, C, C++, Visual Basic, Linux-scripting</li>
+                        <ul class="images"> 
+                            <!--<li>Languages: Java, PHP, JavaScript, C, C++, Visual Basic, Linux-scripting</li>
                             <li>Databases: MySQL, phpMyAdmin </li>
-                            <li>Development Tools: Netbeans SDK, Eclipse SDK, IBM DB2, Oracle, VB Studio</li>
+                            <li>Development Tools: Netbeans SDK, Eclipse SDK, IBM DB2, Oracle, VB Studio</li>-->
+                            <li><img src="img/git.png" class="tools" alt="Git"> </li>
+                            <li><img src="img/javascript.png" class="tools" alt="JavaScript"> </li>
+                            <li><img src="img/html5.png" class="tools" alt="HTML5"> </li>
+                            <li><img src="img/java.png" class="tools" alt="Java"> </li>
+                            <li><img src="img/mysql.png" class="tools" alt="MySQL"> </li>
+                            <li><img src="img/meteor.png" class="tools" alt="Meteor"> </li>
+                            <li><img src="img/php.jpg" class="tools" alt="Php"> </li>
+                            <li><img src="img/mongo.png" class="tools" alt="MongoDB"> </li>  
                         </ul>   
                     </nav>  
                 </div>
+                 
             </div>
-            <div  class="row">
+
+            <div id="projectwork" class="row page-section">
                 <div  id="secTitle" class="col-sm-2">
                     <h3>Project Work </h3>
                 </div>  
                 <div id="bcg" class="col-sm-10">
                     <dl>
-                        <dt>Database Driven Website</dt>
-                        <dd> - Created a functioning website using MySQL paired with PHP.</dd>
                         <dt>Front End Web Development</dt>
                         <dd> - Added E-commerce functionality to a website created by a team for a client. </dd>
+                        <dd> - <a href="http://www.justinebassani.com/">Click to view client's website.</a></dd>
+                        <dt>Database Driven Website</dt>
+                        <dd> - Created a functioning website using MySQL paired with PHP.</dd>
                         <dt>Mobile Game</dt>
                         <dd> - Created a game application for an android phone using JavaME environment.</dd>
+                        <dt>Thesis</dt>
+                        <dd> - Focus: Deep Learning Gaussian Radial Basis Function Networks with an Application to Phone Recognition</dd>
                     </dl>    
                 </div>
-            </div>              
+            </div>    
+          </div>
         </div>
     </body>
 </html>
